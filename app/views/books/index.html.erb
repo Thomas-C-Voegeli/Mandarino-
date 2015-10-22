@@ -1,0 +1,6 @@
+<div id="container">
+<h1>Books Index</h1>
+<% @books.each do |book| %>
+	<h2><%= book.title_chinese %> <%= book.title_english %> <%= book.series %></h2>
+<% end %>
+</div>

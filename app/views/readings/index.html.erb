@@ -1,0 +1,6 @@
+<div id="container">
+  <h1>Readings Index</h1>
+  <% @readings.each do |reading| %>
+	<a href="<%= reading_path(reading.id) %>"><%= reading.title %></a><p></p>
+  <% end %>
+</div>
