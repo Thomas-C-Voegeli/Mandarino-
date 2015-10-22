@@ -1,28 +1,14 @@
-== README
+Chinese language learning app (Ruby on Rails/JavaScript)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mandarino! is a lightweight proof of concept for a web-based Mandarin Chinese ebook. Textbook content from Chapter 1 of Far East Everyday Chinese 3 is for demonstration purposes only.
 
-Things you may want to cover:
+This was originally buit in Ruby on Sinatra (https://github.com/Thomas-C-Voegeli/mandarin-ebook), and I'm now in the process of porting it to Rails. This Rails version includes some improvements to the structure of the database to allow for future feature additions.
 
-* Ruby version
+Users are able to highlight vocabulary words in a chapter's readings and view a pop-up window showing the word's definition as defined in the textbook. This feature was designed to address the multitude of contextual variations in meaning that exist to a far greater extent in Mandarin than in Romance languages, and the failure of Google Translate and other dictionaries to address this problem. Words that a user has looked up will then be highlighted in yellow in the vocab list for that chapter, and a study list generated containing all characters a user has looked up along with each word's total lookup count.
 
-* System dependencies
+Moving into the future, I plan to add features to the Rails version that will:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Sort study list by frequency
+Display a characters' radical/components in the left-hand panel beside a reading.
+Allow users to add notes and example sentences directly to the textbook's vocab list.
+Allow users to keep a searchable notebook of their own creation.
